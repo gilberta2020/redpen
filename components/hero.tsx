@@ -78,12 +78,20 @@ export default function Hero() {
             Inspiring Minds | Building Futures
           </p>
           <div className="animate-fade-in-up animation-delay-400">
-            <a
-              href="#about"
-              className="inline-block bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-            >
-              Discover My Journey
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#about"
+                className="inline-block bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              >
+                Discover My Journey
+              </a>
+              <a
+                href="/journey"
+                className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              >
+                My Journey
+              </a>
+            </div>
           </div>
         </div>
       </div>

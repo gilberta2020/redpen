@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 export default function Navigation() {
@@ -19,11 +20,7 @@ export default function Navigation() {
   const navItems = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
-    { href: "#philosophy", label: "Teaching Philosophy" },
-    { href: "#reflective", label: "Reflective Practice" },
-    { href: "#gallery", label: "Gallery" },
     { href: "#contact", label: "Contact" },
-    { href: "#cv", label: "CV" },
   ]
 
   return (
@@ -34,8 +31,17 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <Link href="#home" className="text-2xl font-bold text-teal-700 hover:text-teal-600 transition-colors">
-            Gilbert Yeboah
+          <Link href="#home" className="flex items-center space-x-3">
+            <Image
+              src="/images/gilbert-logo.jpg"
+              alt="Gilbert Yeboah Logo"
+              width={40}
+              height={40}
+              className="rounded-lg"
+            />
+            <span className="text-2xl font-bold text-teal-700 hover:text-teal-600 transition-colors">
+              Gilbert Yeboah
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
